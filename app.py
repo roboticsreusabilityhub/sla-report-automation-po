@@ -171,7 +171,7 @@ def render_analysis_page(model_name, file_name):
     st.markdown(f"### ⏳ Section 2: Pending Times ({model_name})")
 
     if uploaded_log:    
-        ai_validated_file = './output/'+file_name
+        ai_validated_file = file_name
         ticket_id = get_ticket_id_from_file_name(uploaded_log.name)
         
         if os.path.exists(ai_validated_file):
