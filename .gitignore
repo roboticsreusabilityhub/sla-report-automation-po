@@ -1,0 +1,26 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+bin/
+lib/
+include/
+
+# Environment Variables / Credentials
+.env
+*.rep
+*.txt
+!requirements.txt
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE specific
+.vscode/
+.idea/
+
+# OS specific
+.DS_Store
+Thumbs.db

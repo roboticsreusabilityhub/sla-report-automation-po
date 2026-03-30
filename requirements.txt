@@ -1,0 +1,11 @@
+openai 
+azure-identity
+azure-cognitiveservices-speech
+dotenv
+pydub
+json_repair
+python-docx
+
+streamlit>=1.31.0
+pydantic_settings
+azure-ai-textanalytics==5.2.0
