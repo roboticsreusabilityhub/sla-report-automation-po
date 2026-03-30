@@ -187,6 +187,4 @@ def render_analysis_page(model_name, file_name):
                 st.error(f"Excel missing column: {required_col}")
 
 # --- RENDER TABS ---
-tab1 = st.tabs(["📊 gpt-4.1"])
-with tab1:
-    render_analysis_page("gpt-4.1","Action_Output_PendingTimes.xlsx")
+render_analysis_page("gpt-4.1","Action_Output_PendingTimes.xlsx")
