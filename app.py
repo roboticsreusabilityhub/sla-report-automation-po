@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 # Your custom imports
 from models.IssueCauser import IssueCauser
 from models.text_anonmyzation_handler import TextAnonmizationHandler
-from enums.LanugageEnum import LanguageEnum
 from models.chunker import Chunker
 from models.sla_automation_report_analyzer import SLAAutomationReportAnalyzer
 
@@ -41,7 +40,7 @@ anon_handler, chunker, openai_api_key = init_handlers()
 # --- SIDEBAR ---
 with st.sidebar:
     st.header("⚙️ Global Settings")
-    selected_lang = st.selectbox("Log Language", [LanguageEnum.GERMAN, LanguageEnum.ENGLISH])
+    selected_lang = st.selectbox("Log Language", ["GERMAN", "ENGLISH"])
     
     st.divider()
     if st.button("🧹 Clear All Caches"):
